@@ -4,9 +4,11 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
+	log.SetOutput(os.Stdout)
 	// Hello world, the web server
 	log.Println("Starting application...")
 
